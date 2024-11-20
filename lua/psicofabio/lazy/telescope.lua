@@ -30,9 +30,9 @@ return { -- Fuzzy Finder (files, lsp, etc)
       vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
       vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
       vim.keymap.set('n', '<leader>sw', builtin.live_grep, { desc = '[S]earch by [G]rep' })
-      vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
-      vim.keymap.set('n', '<leader>sd', builtin.lsp_document_symbols, { desc = '[S]earch [D]document symbol' })
-      -- vim.keymap.set('n', '<leader>se', builtin.diagnostics, { desc = '[S]earch diagnostics ([E]rrors)' })
+      vim.keymap.set('n', '<leader>sst', builtin.builtin, { desc = '[S]earch [S]elect [T]elescope' })
+      vim.keymap.set('n', '<leader>sds', builtin.lsp_document_symbols, { desc = '[S]earch [D]document symbol' })
+      vim.keymap.set('n', '<leader>sdd', builtin.diagnostics, { desc = '[S]earch [D]ignotics' })
       vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
     end,
   }

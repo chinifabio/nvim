@@ -29,6 +29,18 @@ autocmd('LspAttach', {
     end
 })
 
+-- Auto recenter after TelescopePrompt
+autocmd('BufLeave', {
+	group = PsicofabioGroup,
+	pattern = '*',
+	callback = function(events)
+		local ft = vim.api.nvim_buf_get_option(events.buf, 'filetype')
+		if ft == 'TelescopePrompt' then
+			vim.api.nvim_feedkeys('zz', 'n', false)
+		end
+	end
+})
+
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
