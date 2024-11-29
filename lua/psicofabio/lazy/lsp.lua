@@ -28,6 +28,7 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "rust_analyzer",
+                "ruff", "ruff_lsp"
             },
             handlers = {
                 function(server_name)
