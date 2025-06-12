@@ -1,1 +1,3 @@
-require("psicofabio")
+require("config.lazy")
+require("config.remaps")
+require("config.settings")
